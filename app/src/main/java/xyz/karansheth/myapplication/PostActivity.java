@@ -50,8 +50,6 @@ public class PostActivity extends AppCompatActivity {
             {
                 x = createPost(x) + 1;
 
-                Intent intent = new Intent(getApplicationContext(), UserFeedActivity.class);
-                startActivity(intent);
             }
         });
     }

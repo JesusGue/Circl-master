@@ -40,12 +40,72 @@ public class UserFeedActivity extends AppCompatActivity {
 
         feed = (ListView)findViewById(R.id.feed);
         mDatabase = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = mDatabase.getReferenceFromUrl("https://myapplication4-b497d.firebaseio.com/Data0");
+        DatabaseReference myRefData0 = mDatabase.getReferenceFromUrl("https://myapplication4-b497d.firebaseio.com/Data0");
+        DatabaseReference myRefData1 = mDatabase.getReferenceFromUrl("https://myapplication4-b497d.firebaseio.com/Data1");
+        DatabaseReference myRefData2 = mDatabase.getReferenceFromUrl("https://myapplication4-b497d.firebaseio.com/Data2");
 
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, posts);
         feed.setAdapter(arrayAdapter);
 
-        myRef.addChildEventListener(new ChildEventListener() {
+        myRefData0.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                String value = dataSnapshot.getValue(String.class);
+                posts.add(value);
+                arrayAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        myRefData1.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                String value = dataSnapshot.getValue(String.class);
+                posts.add(value);
+                arrayAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        myRefData2.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 String value = dataSnapshot.getValue(String.class);

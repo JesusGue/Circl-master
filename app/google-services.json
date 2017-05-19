@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "621167663378",
+    "firebase_url": "https://myapplication4-b497d.firebaseio.com",
+    "project_id": "myapplication4-b497d",
+    "storage_bucket": "myapplication4-b497d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621167663378:android:363599606b6aaa3e",
+        "android_client_info": {
+          "package_name": "xyz.karansheth.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621167663378-huv49dgeo1ecr8jp09g4rdlno5k5e7dk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xyz.karansheth.myapplication",
+            "certificate_hash": "98526db759b1545c98cec139202b75483cddd7dc"
+          }
+        },
+        {
+          "client_id": "621167663378-108s7f9jm9882jq9nmbjlllnnb2tghfq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xyz.karansheth.myapplication",
+            "certificate_hash": "02c057719af1cc5a46d97e155c344e12479fea91"
+          }
+        },
+        {
+          "client_id": "621167663378-e09j3393tubf77h5qnonllev2rlnea8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGJj1x0d5JCUOlKP3TqbbubYHp1l8c-jc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621167663378-e09j3393tubf77h5qnonllev2rlnea8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

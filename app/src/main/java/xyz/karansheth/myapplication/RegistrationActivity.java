@@ -117,6 +117,7 @@ public class RegistrationActivity extends AppCompatActivity {
                                 // If sign in fails, display a message to the user.
                                 Toast.makeText(RegistrationActivity.this, "Authentication failed.",
                                         Toast.LENGTH_SHORT).show();
+                                //Quick edit for demo
                             }
                             progressDialog.dismiss();
 
